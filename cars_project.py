@@ -1,15 +1,15 @@
-# Списък с коли, всяка кола е представена като речник
+# List of cars, each car is represented as a dictionary
 cars = [
     {"id": 1, "brand": "Toyota", "model": "Corolla", "rental_price": 30, "availability": True},
     {"id": 2, "brand": "Honda", "model": "Civic", "rental_price": 35, "availability": True},
     {"id": 3, "brand": "Ford", "model": "Focus", "rental_price": 25, "availability": True}
 ]
 
-# Речник за проследяване на статуса на наемане
+# Hiring status tracking dictionary
 rental_status = {}
 
 
-# Функция за наемане на кола
+# Car rental function
 def rent_car(car_id, user):
     for car in cars:
         if car["id"] == car_id and car["availability"]:
@@ -20,7 +20,7 @@ def rent_car(car_id, user):
     print("Car not available or invalid car ID.")
 
 
-# Функция за връщане на кола
+# Car return function
 def return_car(user, rental_duration):
     if user in rental_status:
         car_id = rental_status[user]["car_id"]
@@ -36,7 +36,7 @@ def return_car(user, rental_duration):
         print("No car rented by this user.")
 
 
-# Функция за показване на наличните коли
+# Function to display available cars
 def view_available_cars():
     print("Available cars:")
     for car in cars:
