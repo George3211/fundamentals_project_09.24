@@ -54,7 +54,7 @@ cars = [
     {"id": 53, "brand": "Alfa Romeo", "model": "Stelvio", "rental_price": 110, "availability": True},
     {"id": 54, "brand": "BMW", "model": "3 Series", "rental_price": 50, "availability": True},
     {"id": 55, "brand": "Audi", "model": "A4", "rental_price": 52, "availability": True},
-    {"id": 56, "brand": "Mercedes-Benz", "model": "C-Class", "rental_price": 55, "availability": True,},
+    {"id": 56, "brand": "Mercedes-Benz", "model": "C-Class", "rental_price": 55, "availability": True},
     {"id": 57, "brand": "BMW", "model": "5 Series", "rental_price": 70, "availability": True},
     {"id": 58, "brand": "Audi", "model": "A6", "rental_price": 65, "availability": True}
 ]
